@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板任务</title>
+    <link rel="stylesheet" href="./messageboard.css">
+    <style type="text/css">
+body{
+    background-image: url(./picture/31.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2%;
+}
+</style>
+</head>
+
+<body>
+    <div class="messageboard-head">留</br>言</br>板</div>
+        <button class="back" onclick="back()">退出登录</button>
+            <ul class="function-option">
+                <li><a href="#" class="li-active" id="li1" onclick="li1()">最新留言</a></li>
+                <li><a href="#" class="li-quiet" id="li2" onclick="li2()">我的留言</a></li>
+                <li><a href="#" class="li-quiet" id="li3" onclick="li3()">写留言</a></li>
+            </ul>
+            <div class="message-board-input">
+                <form id="leave-message" class="leave-message">
+                    <textarea id="inputmessage" name="message" class="message-input-box" onkeypress="newline()" onclick="changeindex()" placeholder="(最多可输入50字)"></textarea>
+                    <button type="submit" class="button">>></button>
+                    <img src="./picture/10.jpg" alt="woman" width="200" height="300" class="msg_board_pic">
+                    <p class="text">“我只望他一眼，</br>万般柔情，便涌上心头。”</p>
+                </form>
+
+                <div id="latest-wrapper">
+                    <div id="latest-wrapper_0" style="background-image: url(./picture/22.jpg)" class="message-latest-four"></div>
+                    <div id="latest-wrapper_1" style="background-image: url(./picture/23.jpg)" class="message-latest-four"></div>
+                    <div id="latest-wrapper_2" style="background-image: url(./picture/24.jpg)" class="message-latest-four"></div>
+                    <div id="latest-wrapper_3" style="background-image: url(./picture/25.jpg)" class="message-latest-four"></div>
+                </div>
+                
+                <div id="show-wrapper" class="show-wrapper">
+                    <div id="show-wrapper_0" style="background-image: url(./picture/26.jpg)" class="message-board-show"></div>
+                    <div id="show-wrapper_1" style="background-image: url(./picture/27.jpg)" class="message-board-show"></div>
+                    <div id="show-wrapper_2" style="background-image: url(./picture/28.jpg)" class="message-board-show"></div>
+                    <div id="show-wrapper_3" style="background-image: url(./picture/29.jpg)" class="message-board-show"></div>
+                </div>
+            </div>
+            <div id="errmessage" class="errmessagestyle"></div>
+            <ul class="pagination">
+                <li><a href="#" onclick="select_page(-1)">上一页</a></li>
+                <li><a href="#" onclick="select_frist_page()">1</a></li>
+                <li><a href="#">…</a></li>
+                <li><a href="#">当前页</a></li>
+                <li><a href="#">…</a></li>
+                <li><a href="#">尾页</a></li>
+                <li><a href="#" onclick="select_page(+1)">下一页</a></li>
+            </ul>
+            <textarea id="changemsg" class="message-change-box" placeholder="(在输入内容后点击要更改的留言的更改按钮)"></textarea>       
+<script src="./onloadshow.js"></script>
+<script src="./messageboard.js"></script>
+<script src="./delete.js"></script>
+<script src="./change.js"></script>
+</body>
