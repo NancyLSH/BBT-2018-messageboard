@@ -1,84 +1,66 @@
-*{margin:0;padding:0;}
-.father{
-    height:18cm;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-img{
+img {
     border-radius: 15px;
     box-shadow: 10px 10px 10px black;
-    z-index:2;
+    z-index: 2;
     position: relative;
 
 }
 
-.entrance{
+.entrance {
     background-color: rgba(15, 38, 59, 0.322);
     padding-left: 55%;
     padding-right: 10%;
     padding-top: 20%;
     padding-bottom: 28%;
     position: relative;
-    top:-38em;
+    top: -38em;
     left: 6ex;
     z-index: 0;
 
 }
 
 
-.p1{
-color: rgb(17, 17, 17);
-font-size: 2.5ex;
-text-shadow:10px 10px 10px #240d68ad; 
-animation-name: breath;
-background: none;
-border: none;
-animation-timing-function:ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 3s;
-cursor:pointer;
-position: relative;
-top: 1.5cm;
-z-index: 1;
-}
-
-@keyframes breath{
-    from{opacity:0.1;}
-    50%{opacity:1;}
-    to{opacity:0.1;}
-}
-
-.login{
-    background-color: rgba(0, 0, 0, 0.267);
-    width: 45%;
-    height: 15em;
-    padding-top: 2em;
-    padding-bottom: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
+.p1 {
+    color: rgb(17, 17, 17);
+    font-size: 2.5ex;
+    text-shadow: 10px 10px 10px #240d68ad;
+    animation-name: breath;
+    background: none;
+    border: none;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    cursor: pointer;
     position: relative;
-    left: 48%;
-    bottom: 28cm;
-    z-index:0;
+    top: 1.5cm;
+    z-index: 1;
+}
+
+@keyframes breath {
+    from {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.1;
+    }
+}
+
+.SignInBody {
+    background-color:rgba(0, 0, 0, 0.267);
     border-radius: 15px 50px;
-    display: none;
 }
 
-.p2{
-    color:black;
-    font-size: 2ex;
-    position: relative;
-    text-align: center;
-}
-.p2::after{
-    content:'';
-	display:block;
-	width:100px;
-	margin-top:-3px;
-    border-bottom:2px solid rgb(0, 0, 0);
-    position: absolute;
-    left: 40%;
-}
-.p3{
+.textbox {
     background-color: rgba(250, 235, 215, 0.555);
     width: 78%;
     font-size: 1.5ex;
@@ -89,120 +71,113 @@ z-index: 1;
     margin-top: 1em;
     left: 1.3em;
 }
-.input{
-    outline-style: none;
-    outline-color: transparent;
-    border: none;
-    background-color: transparent;
-    font-size: 18px;
-    width: 8cm;
-}
-.p4{
-    background-color: rgba(250, 235, 215, 0.555);
-    width: 78%;
-    font-size: 1.5ex;
-    padding: 1% 3%;
-    border-radius: 20ex;
-    position: relative;
-    left: 1.3em;
-}
-.log{
+
+.SignInButton {
     font-size: 1.5ex;
     position: relative;
     left: 75%;
-    top:1.5em;
-    display:inline-block;
-    background-color:transparent;
+    top: 1.5em;
+    display: inline-block;
+    background-color: transparent;
     border: none;
     color: black;
     transition: all 0.5s;
     cursor: pointer;
     padding: 1% 9%;
 }
-.log span {
+
+.SignInButton span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
     border: none;
-  }
-  
-.log span:after {
+}
+
+.SignInButton span:after {
     content: '»';
     position: absolute;
-    opacity:0;
+    opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
     border: none;
-  }
-  .log:hover span {
+}
+
+.SignInButton:hover span {
     padding-right: 25px;
-    border:none;
-  }
-  
-  .log:hover span:after {
+    border: none;
+}
+
+.SignInButton:hover span:after {
     opacity: 1;
     right: 0;
     border: none;
-  }
- .nosignup{
-     background-color: transparent;
-     font-size: 1.3ex;
-     width: 10cm;
-     position: relative;
-     left: 60%;
-     bottom: 4em;
-     display:none;
-     
- }
- .no{
-     text-decoration: underline;
-     color: rgb(0, 0, 0);
-     position: relative;
- }
- .signup-tabular{
-     background-color: rgba(252, 252, 252, 0.534);
-     position: relative;
-     padding: 2%;
-     padding-bottom: 7em;
+}
+
+.ToSignUp {
+    background-color: transparent;
+    font-size: 1.3ex;
+    width: 10cm;
+    position: relative;
+    left: 60%;
+    bottom: 4em;
+
+}
+
+.no {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.signup-tabular {
+    background-color: rgba(252, 252, 252, 0.534);
+    position: relative;
+    padding: 2%;
+    padding-bottom: 7em;
     z-index: 0;
     height: 10cm;
- }
- .title{
-     position: relative;
-     left:28%;
-     padding-top: 1ex;
-     margin-bottom: 1.5ex;
-     letter-spacing: 5ch;
-     font-size: 3ex;
-     width:60%;
- }
- .title::after{
-    content:'';
-	display:block;
-	width:8cm;
-    border-bottom:2px solid rgb(0, 0, 0);
-    position: relative;
-    bottom:0em;
-    right:1.2em ;
 }
-.signup-editrow{
+
+.title {
+    position: relative;
+    left: 28%;
+    padding-top: 1ex;
+    margin-bottom: 1.5ex;
+    letter-spacing: 5ch;
+    font-size: 3ex;
+    width: 60%;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 8cm;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    position: relative;
+    bottom: 0em;
+    right: 1.2em;
+}
+
+.signup-editrow {
     background-color: rgba(240, 248, 255, 0.61);
     padding: 1% 1%;
     width: 40%;
     border-radius: 1em;
     margin-bottom: 2em;
     position: relative;
-    left:3em;
+    left: 3em;
 }
-.confirm-box{
-    text-align:left;
+
+.confirm-box {
+    text-align: left;
     font-size: 1ex;
     position: relative;
-    left:5em;
+    left: 5em;
 }
-.click{
+
+.click {
     font-size: 2ex;
     outline-color: transparent;
     border: none;
@@ -210,41 +185,45 @@ z-index: 1;
     width: 5em;
     cursor: pointer;
     position: relative;
-    left:15em;
+    left: 15em;
 }
-.click{
+
+.click {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
+}
+
 .click:after {
     content: '»»';
     position: absolute;
-    opacity:0;
+    opacity: 0;
     top: 0;
     right: 0px;
     transition: 0.5s;
-  }
-  .click:hover  {
+}
+
+.click:hover {
     padding-right: 35px;
-  }
-  
-  .click:hover:after {
+}
+
+.click:hover:after {
     opacity: 1;
     right: 0;
-  }
-.messageboard-head{
+}
+
+.messageboard-head {
     font-size: 2em;
     text-align: center;
     width: 5%;
-    height:9.5cm;
+    height: 9.5cm;
     padding-left: 1ex;
     padding-bottom: 2em;
     border-right: 2px solid rgba(0, 0, 0, 0.719);
 }
-.back{
+
+.back {
     padding: 3px 6px;
     border: none;
     position: relative;
@@ -252,64 +231,71 @@ z-index: 1;
     bottom: 5px;
     cursor: pointer;
     font-size: 1.2ex;
-    display:inline-block;
+    display: inline-block;
     transition: all 0.5s;
     background-color: rgba(58, 59, 82, 0.5);
     color: black;
     border-radius: 2px;
 }
-.back{
+
+.back {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
+}
+
 .back:after {
     content: '<<';
     position: absolute;
-    opacity:0;
+    opacity: 0;
     right: -10px;
     transition: 0.5s;
-  }
-  .back:hover{
+}
+
+.back:hover {
     padding-right: 23px;
-  }
-  
-  .back:hover:after {
+}
+
+.back:hover:after {
     opacity: 1;
     right: 0;
-  }
-  ul.pagination{
+}
+
+ul.pagination {
     display: none;
-    padding:0;
+    padding: 0;
     margin: 0;
-    position:absolute;
+    position: absolute;
     left: 13cm;
     bottom: 2em;
     z-index: 2;
-  }
-  
-  ul.pagination li{
-      display: inline;
-      
-  }
-  ul.pagination li a{
-      text-decoration: none;
-      color: darkgrey;
-      padding: 0.5em 1em;
-      transition: background-color 0.3s;
-      border-radius: 4ex;
- }
- ul.pagination li a.active {
+}
+
+ul.pagination li {
+    display: inline;
+
+}
+
+ul.pagination li a {
+    text-decoration: none;
+    color: darkgrey;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+    border-radius: 4ex;
+}
+
+ul.pagination li a.active {
     background-color: #ddd;
     color: rgb(0, 0, 0);
 }
 
- ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
 
- ul.function-option{
-    list-style-type:none;
+ul.function-option {
+    list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: rgba(102, 101, 88, 0.336);
@@ -317,9 +303,9 @@ z-index: 1;
     position: absolute;
     left: 3cm;
     top: 2em;
- }
- 
- .li-active{
+}
+
+.li-active {
     border-bottom: 5px solid transparent;
     background-color: #555;
     color: white;
@@ -328,21 +314,23 @@ z-index: 1;
     text-align: center;
     display: block;
     text-decoration: none;
- }
- .li-quiet{
-     font-size: 15px;
-     padding: 1ex 2ex;
-     text-align: center;
-     display: block;
-     text-decoration: none;
-     color: rgba(0, 0, 0, 0.733);
-     cursor: pointer;
-     border-bottom: 5px solid transparent;
- }
-.msg{
-    z-index:5;
-    height:1cm;
-    width:7cm;
+}
+
+.li-quiet {
+    font-size: 15px;
+    padding: 1ex 2ex;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.733);
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+}
+
+.msg {
+    z-index: 5;
+    height: 1cm;
+    width: 7cm;
     background-color: rgba(212, 165, 165, 0.788);
     text-align: center;
     position: relative;
@@ -352,30 +340,33 @@ z-index: 1;
     border-radius: 3em;
     display: none;
 }
-.message-board-input{
+
+.message-board-input {
     background-color: rgba(85, 85, 85, 0.418);
-    width:60%;
-    height:12cm;
+    width: 60%;
+    height: 12cm;
     position: absolute;
     left: 8cm;
     bottom: 2.5cm;
 }
-.message-input-box{
+
+.message-input-box {
     width: 12cm;
-    height:28em;
+    height: 28em;
     position: relative;
     left: 22em;
     top: 3em;
-    resize:none;
+    resize: none;
     border: none;
     background-color: rgba(253, 253, 253, 0.747);
     z-index: 0;
     border-radius: 2ex;
 }
-.errmessagestyle{
+
+.errmessagestyle {
     background-color: rgba(54, 53, 56, 0.418);
     border-radius: 5px;
-    height:3ex;
+    height: 3ex;
     width: 30em;
     text-align: center;
     z-index: 1;
@@ -385,61 +376,67 @@ z-index: 1;
     display: none;
     color: antiquewhite;
 }
-.button{
-    text-shadow:2px 2px 2px #240d68ad; 
+
+.button {
+    text-shadow: 2px 2px 2px #240d68ad;
     animation-name: breath;
-    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 3s;
     background-color: transparent;
-    border:none;
-    height:2em;
+    border: none;
+    height: 2em;
     width: 3em;
     font-size: 12px;
     z-index: 4;
     position: relative;
     left: 20em;
-    top:10px;
+    top: 10px;
     color: rgba(10, 10, 10, 0.5);
 }
+
 .leave-message,
 .show-wrapper {
     display: none;
 }
-.message-latest-four{
+
+.message-latest-four {
     background-color: rgb(0, 0, 0);
     width: 19cm;
     height: 5.3em;
-    margin:1%;
+    margin: 1%;
     border-radius: 2ex;
-    padding:8px;
+    padding: 8px;
     color: rgba(248, 249, 250, 0.788);
 }
-.message-board-show{
+
+.message-board-show {
     background-color: rgba(206, 221, 235, 0.836);
     color: rgba(255, 223, 223, 0.651);
     width: 19cm;
     height: 5em;
     position: relative;
     margin: 1.5%;
-    padding:8px;
+    padding: 8px;
     border-radius: 2ex;
 }
-.errmsg{
+
+.errmsg {
     background-color: rgb(255, 231, 196);
     border-radius: 5px;
-    height:3ex;
+    height: 3ex;
     text-align: center;
     z-index: 1;
     position: relative;
     top: 9em;
 }
-.deletebutton{
+
+.deletebutton {
     cursor: pointer;
     background: none;
     border: none;
     animation-name: breath;
-    animation-timing-function:ease-in-out;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 5s;
     background-color: rgba(250, 235, 215, 0.678);
@@ -450,9 +447,10 @@ z-index: 1;
     margin-right: 2px;
 
 }
-.message-change-box{
+
+.message-change-box {
     display: none;
-    resize:none;
+    resize: none;
     width: 30em;
     height: 12em;
     position: relative;
@@ -461,24 +459,26 @@ z-index: 1;
     background-color: rgba(245, 245, 220, 0.664);
     font-size: 15px;
     border-radius: 1em;
-    border: 1px solid  rgba(153, 205, 50, 0.445);
+    border: 1px solid rgba(153, 205, 50, 0.445);
 
 }
-.msg_board_pic{
+
+.msg_board_pic {
     position: relative;
     top: -4em;
     right: 24em;
     border-radius: 0;
 }
-.text{
-    text-shadow:2px 2px 2px #240d68ad; 
+
+.text {
+    text-shadow: 2px 2px 2px #240d68ad;
     font-size: 20px;
     position: relative;
     left: 2em;
     bottom: 2em;
 }
-textarea::-webkit-input-placeholder { 
-    color: rgb(19, 18, 18); 
+
+textarea::-webkit-input-placeholder {
+    color: rgb(19, 18, 18);
     font-weight: 600;
-    } 
-    
+}

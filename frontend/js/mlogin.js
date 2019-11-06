@@ -1,8 +1,9 @@
-function p1() {
+/*function p1() {
     document.getElementById("p1").style.display="none";
     document.getElementById("login").style.display="block";
     document.getElementById("nosignup").style.display="block";
 }
+
 
 document.getElementById("login1").addEventListener("submit",function(evt) {        
     evt.preventDefault();
@@ -38,3 +39,7 @@ document.getElementById("login1").addEventListener("submit",function(evt) {
     })
 
 })
+
+*/
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="7">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, 
+    minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>留言板任务</title>
+    <link rel="stylesheet" href="./css/css.css">
+
+    <style type="text/css">
+        body {
+            background-color: rgb(255, 250, 250);
+            padding: 3%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- <div id="father" onload="hidediv()" class="father"> -->
+        <!-- <div class="image"> -->
+            <!-- <img src="./picture/4.jpg" alt="woman" width="500" height="700"> -->
+        <!-- </div> -->
+        <!-- <div class="entrance" id="entrance-title"> -->
+            <!-- <button class="p1" id="p1" onclick="p1()">请说出你的故事。>>></button> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <div class="SignInBody" id="SignInBody">
+        <p style="color:black;font-size:2.5rem;text-align:center;">登录</p>
+        <form id="SigIn">
+            账号：<input type="text" name="username" id="username" >
+            密码：<input type="password" name="password" id="password">
+            <button type="submit" class="SignInButton" style="vertical-align:middle"><span>登录</span></button>
+        </form>
+        <div id="errmsg" class="errmsg"></div>
+    </div>
+
+
+    <div class="ToSignUp" id="ToSignUp">
+        <a href="./signup.html" class="no">还未注册？请用力戳我！用力！！！！</a>
+    </div>
+    <script src="./js/mlogin.js"></script>
+</body>

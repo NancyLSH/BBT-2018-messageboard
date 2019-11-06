@@ -1,19 +1,5 @@
 <?php
-header('Content-Type: application/json');
-error_reporting(E_ALL);                       //报告所有的可能出现的错误，不要抛弃，抛弃的才更应该看！
-$conn=mysqli_connect(
-    'localhost',
-    'root',
-    '',
-    'mb'
-);
-if(!$conn){
-    printf("Can't connect to MySQL Server.Errorcode:%S",
-    mysqli_connect_error());
-    exit;
-}else{
-    //echo'数据库已连接'."<br/>";
-}
+
 mysqli_query($conn,"set character set 'utf8'");
 session_start();
 global $userid;

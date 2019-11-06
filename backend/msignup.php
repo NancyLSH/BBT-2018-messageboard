@@ -1,18 +1,5 @@
 <?php
-header('Content-Type: application/json');
-$conn=mysqli_connect(
-    'localhost',
-    'root',
-    '',
-    'mb'
-);
-if(!$conn){
-    printf("Can't connect to MySQL Server.Errorcode:%S",
-    mysqli_connect_error());
-    exit;
-}else{
-   //echo'数据库已连接'."<br/>";
-}
+
 mysqli_query($conn,"set character set 'utf8'");
 $username=$_POST['username'];
 $password=$_POST['password'];
